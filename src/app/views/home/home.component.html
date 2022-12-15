@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+        <span style="font-size:1.35rem;">Godzilla Local Filmes</span>
+        <span class="example-spacer"></span>
+        <button class="button-style" mat-button [matMenuTriggerFor]="beforeMenu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <button mat-menu-item>Lista de Filmes</button>
+            <button mat-menu-item>Alugar Filme</button>
+        </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>
+<app-filmes-list></app-filmes-list>
